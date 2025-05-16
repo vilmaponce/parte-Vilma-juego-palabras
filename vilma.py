@@ -21,7 +21,7 @@
 #     print("\n🎮 ¡Bienvenidos al juego Adivina la palabra!")
 #     print(f"\nLa palabra tiene {len(palabra)} letras. Podés ingresar una letra o arriesgar la palabra completa.\n")
 
-# # --------------------------BELEN (PARTE 3/3)
+# # --------------------------BELEN (PARTE 2/3)
 #     while jugando:
 #         mostrar = ""
 #         for letra in palabra:
@@ -39,7 +39,7 @@
 #         if entrada == "salir":
 #             print(f"\n🫡 Te diste por vencido. La palabra era: {palabra}")
 #             break
-# --------------------------VILMA (PARTE 2/3)-------------------------------------------------------
+# --------------------------VILMA (PARTE 3/3)-------------------------------------------------------
         if len(entrada) > 1:
             if entrada == palabra:
                 print(f"\n🎉 ¡Increíble! Adivinaste la palabra completa: {palabra}")
