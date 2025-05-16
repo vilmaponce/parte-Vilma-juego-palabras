@@ -40,47 +40,47 @@
             print(f"\n🫡 Te diste por vencido. La palabra era: {palabra}")
             break
 # --------------------------VILMA (PARTE 3/3)-------------------------------------------------------
-#         if len(entrada) > 1:
-#             if entrada == palabra:
-#                 print(f"\n🎉 ¡Increíble! Adivinaste la palabra completa: {palabra}")
-#                 break
-#             else:
-#                 print("❌ Esa no es la palabra. Perdés 2 vidas.")
-#                 vidas -= 2
-#                 if vidas <= 0:
-#                     print(f"\n💀 Te quedaste sin vidas. La palabra era: {palabra}")
-#                     break
-#                 continue
+        if len(entrada) > 1:
+            if entrada == palabra:
+                print(f"\n🎉 ¡Increíble! Adivinaste la palabra completa: {palabra}")
+                break
+            else:
+                print("❌ Esa no es la palabra. Perdés 2 vidas.")
+                vidas -= 2
+                if vidas <= 0:
+                    print(f"\n💀 Te quedaste sin vidas. La palabra era: {palabra}")
+                    break
+                continue
 
-#         if len(entrada) != 1:
-#             print("⚠️ Solo podés ingresar **una letra** o arriesgar toda la palabra.")
-#             continue
-#         if not entrada.isalpha():
-#             print("⚠️ Solo se permiten letras.")
-#             continue
-#         if entrada in letras_adivinadas or entrada in letras_incorrectas:
-#             print("❗ Ya usaste esa letra. Probá con otra.")
-#             continue
+        if len(entrada) != 1:
+            print("⚠️ Solo podés ingresar **una letra** o arriesgar toda la palabra.")
+            continue
+        if not entrada.isalpha():
+            print("⚠️ Solo se permiten letras.")
+            continue
+        if entrada in letras_adivinadas or entrada in letras_incorrectas:
+            print("❗ Ya usaste esa letra. Probá con otra.")
+            continue
 
-#         if entrada in palabra:
-#             print("✅ ¡Bien! La letra está en la palabra.")
-#             letras_adivinadas.append(entrada)
-#         else:
-#             print("❌ Esa letra no está.")
-#             letras_incorrectas.append(entrada)
-#             vidas -= 1
+        if entrada in palabra:
+            print("✅ ¡Bien! La letra está en la palabra.")
+            letras_adivinadas.append(entrada)
+        else:
+            print("❌ Esa letra no está.")
+            letras_incorrectas.append(entrada)
+            vidas -= 1
 
-#         if all(letra in letras_adivinadas for letra in palabra):
-#             print(f"\n🎉 ¡Felicidades! Adivinaste la palabra: {palabra}")
-#             break
-#         if vidas <= 0:
-#             print(f"\n💀 Te quedaste sin vidas. La palabra era: {palabra}")
-#             break
+        if all(letra in letras_adivinadas for letra in palabra):
+            print(f"\n🎉 ¡Felicidades! Adivinaste la palabra: {palabra}")
+            break
+        if vidas <= 0:
+            print(f"\n💀 Te quedaste sin vidas. La palabra era: {palabra}")
+            break
 
-#     respuesta = input("\n¿Querés jugar otra vez? (s/n): ").lower()
-#     if respuesta == "s":
-#         jugar()
-#     else:
-#         print("👋 Gracias por jugar. ¡Nos vemos!")
+    respuesta = input("\n¿Querés jugar otra vez? (s/n): ").lower()
+    if respuesta == "s":
+        jugar()
+    else:
+        print("👋 Gracias por jugar. ¡Nos vemos!")
         
-# jugar()  
+jugar()  
