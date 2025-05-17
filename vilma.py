@@ -15,7 +15,7 @@ def jugar():
 #     letras_adivinadas = []
 #     letras_incorrectas = []
 #     vidas = 6
-#     jugando = True
+#     jugando =True
      
       
       print("\n🎮 ¡Bienvenidos al juego adivina la palabra!")
