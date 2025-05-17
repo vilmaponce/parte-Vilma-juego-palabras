@@ -1,28 +1,26 @@
 # # --------------------------YAMILA (PARTE 1/3)------------------------------------------------------
-# import random
+import random
 
-# palabras = ["manzana", "bicicleta", "guitarra", "elefante", "montaña", "pelota"]
-def jugar():
-    try
-    with open("integrantes.txt',"r",encoding="utf-8") as archivo:
-#             print("\n⭐⭐⭐INTEGRANTES DEL GRUPO⭐⭐⭐:")
-#             print(archivo.read())
-#  except:FileNotFoundError:
-#         print("⚠️ No se encontró el archivo 'integrantes.txt'.")
+palabras = ["manzana", "bicicleta", "guitarra", "elefante", "montaña", "pelota"]
 
+def jugar(): 
+    # Mostrar integrantes
+    try:
+        with open("integrantes.txt", "r", encoding="utf-8") as archivo:
+            print("\n⭐⭐⭐ INTEGRANTES DEL GRUPO ⭐⭐⭐")
+            print(archivo.read())
+    except FileNotFoundError:
+        print("⚠️ No se encontró el archivo 'integrantes.txt'.")
 
-#  palabras= random.choice(palabras)
-#     letras_adivinadas = []
-#     letras_incorrectas = []
-#     vidas = 6
-#     jugando =True
-     
-      
-      print("\n🎮 ¡Bienvenidos al juego adivina la palabra!")
-#     print(f"\nLa palabra tiene {len(palabra)} letras. podes ingesar una letra o arriesgar la palabra completa \n")
-#    
+    palabra = random.choice(palabras)
+    letras_adivinadas = []
+    letras_incorrectas = []
+    vidas = 6
+    jugando = True
 
-# 
+    print("\n🎮 ¡Bienvenidos al juego Adivina la palabra!")
+    print(f"La palabra tiene {len(palabra)} letras. Podés ingresar una letra o arriesgar la palabra completa.\n")
+    
 # # --------------------------BELEN (PARTE 2/3)
     while jugando:
         mostrar = ""
